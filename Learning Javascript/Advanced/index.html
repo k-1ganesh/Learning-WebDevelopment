@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header"  class="heading">
+        <H1>First Website</H1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, numquam!</p>
+    </header>
+    <nav class="nav-bar">
+        <ul class = 'list'>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Products </a></li>
+        </ul>
+    </nav>
+</body>
+
+<script> 
+/* 
+ ************************* DOM Manipulation ***************************************
+    
+   // DOM Selector => Used to select the elements.
+
+       1. document.getElementById() -> Return the containt of Id
+       2. document.getElementByClassName() -> Return the html collection
+       3. document.getElementByTagName() -> Return the html collection
+       4. document.querySelector() Return the content of Id
+       5. document.querySelectorAll() Return the node list.
+     
+
+    // Inner Content.
+     
+        .innerHTML -> Gives the inner HTML
+        .innerText -> Gives the inner text. (Only the visible text)
+        .textContent -> Gives the inner text . (Including invisible part)
+     
+    
+    // Childrens.
+     
+       e.g: let parent = document.querySelector('.parent')
+       
+       parent.children -> All the childrens in html collection.
+       parent.firstElementChild -> Gives the first child.
+       parent.lastElementChild -> Gives the last child.
+       parent.childrenNodes -> Gives the nodelist of childrens.
+ 
+       Note : We can get the parent element aswell.
+       .parentElement() -> It gives the just above parent element.
+       
+
+    // Creating New DOM Element : 
+
+        Syntax : document.createElement('name of element')
+
+            let div = document.createElement('div')
+
+        // Lets set the attribute of div like class and id 
+        Syntax : div.setAttribute('attr_name' , 'attr_value')
+
+            div.setAttribute('class' , 'cls')
+            div.setAttribute('id' , '1')
+        // Lets attach the element to the document 
+            M1 : document.body.appendChild(div) -> appendChild() appends when parameter is node.
+                 i.e Either a textNode or Element.
+
+            M2 : document.body.append(div) -> append() can used to append anything.
+
+    // Edit and Remove DOM Element : 
+
+        Edit : 
+                oldElement.replaceWith(newElement) // Replaces the old element 
+                oldElement.replaceChildren(newElement) // Replaces all the children to newChildren 
+                oldElement.replaceChild(oldChld , newChild) // Replaces the perticular child. 
+        
+        Remove : 
+                element.remove() // Removes the element.
+*/
+
+</script>
+
+</html>
