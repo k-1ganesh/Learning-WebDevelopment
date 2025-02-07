@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+
+.extra-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.outer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid black;
+  padding: 15px;
+  height: 450px;
+  width: 450px;
+  text-align: center;
+
+  /* background-color: aqua; */
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 40px;
+}
+.ht,
+.wt {
+  font-size: 30px;
+}
+input {
+  padding: 10px;
+  font-size: 15px;
+}
+button {
+  padding: 5px;
+  margin-top: 20px;
+  width: 35%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.result {
+  margin-top: 15px;
+  font-size: 25px;
+  color: red;
+}
+
+.description {
+  margin-top: 20px;
+}
