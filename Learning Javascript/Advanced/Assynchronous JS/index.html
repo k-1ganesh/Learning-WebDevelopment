@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assync</title>
+</head>
+<body>
+     <h1 class="title">I am Learning JS</h1> 
+     <button class="stop">Stop</button>
+     <button class="startprinting">StartPrinting</button>
+     <button class="endprinting">EndPrinting</button>
+</body>
+
+<script>
+    // Suppose i want to change the title to I am ganesh after 5 seconds. 
+    const title = document.querySelector('.title') 
+    const timer = setTimeout(() => { // This will be executed after 5 seconds.
+        title.innerHTML = "I am Ganesh"
+    } , 5000)
+    
+    const btn = document.querySelector('.stop') 
+    btn.addEventListener('click' , () => {
+        clearTimeout(timer) // It is used to stop the settimeout before timer.
+    }) 
+    
+
+    const printBtn = document.querySelector('.startprinting') 
+    const endBtn = document.querySelector('.endprinting') 
+    let printing 
+    printBtn.addEventListener('click' , () => {
+        printing = setInterval(() => {
+            console.log("hi" , Date.now());
+        } , 1000)
+    }) 
+
+   
+    endBtn.addEventListener('click' , () => {
+        clearInterval(printing)
+    })
+
+
+
+</script>
+</html>
