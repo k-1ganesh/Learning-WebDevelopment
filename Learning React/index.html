@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First React Program</title>
+  </head>
+  <body>
+    <!--  Lets write hello world using javascript  -->
+    <!-- <script>
+    const div = document.createElement('div')
+    const header = document.createElement('h1')
+    header.innerHTML = "Hello World" 
+    div.append(header) 
+    document.body.append(div)  
+</script> -->
+
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- Lets write hello world using react  -->
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      const heading = React.createElement("h1", {}, "Hello world");
+      root.render(heading);
+    </script>
+  </body>
+</html>
