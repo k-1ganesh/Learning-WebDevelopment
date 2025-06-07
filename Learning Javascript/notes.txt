@@ -1,0 +1,20 @@
+Everything happens in JS inside execution context.
+Execution context has 2 phases : i) Memory Allocation ii) Code Execution. 
+i) Memory Allocation : In this phase memory gets allocated to the variables and the functions. var : undefined  ,  function : fun(...) 
+ii) Code Execution : In this code execution starts. 
+
+for every function call function execution context gets created and pushed into the call stack. 
+
+Hoisting : Using varible and functions before their declaration. For function and var variables it will work. For let and const it will give error. 
+
+Scope in Javascript : variable is first searched in local scope of function . If not there then outer function . If not there then its outer function. 
+                      This chain is called scope chain. 
+
+Do the let and const gets Hoisted : Yes they gets hoisted but they can't be accesssed before initialization else reference error will be thrown. 
+
+Temporal Dead Zone : It is a time period from let and const getting hoisted to the the initialization. 
+
+Block Scope : {} This is a block .  let and const inside this block are the block scoped varibles.  They exist only inside this block. 
+
+Closure : Closures are the functions which remembers the environment in which they are created.
+          This means that an inner function can access the variables of its outer function, even after the outer function has returned.   
