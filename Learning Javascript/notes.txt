@@ -18,3 +18,14 @@ Block Scope : {} This is a block .  let and const inside this block are the bloc
 
 Closure : Closures are the functions which remembers the environment in which they are created.
           This means that an inner function can access the variables of its outer function, even after the outer function has returned.   
+
+Asynchronous Javascript : By default JS is synchronous but it can be made asynchronous using (Browser API / Web API) .
+What are Web API : These are the set of functions provided by browsers to help js make pages interactive. 
+e.g ( setTimeout , setInterval , DOM API , fetch() , localStorage ) 
+
+How JS execute Asynchronous Code ? 
+=> Whenever Asynchronous code is there its callback gets registered in browser. Consider e.g of setTimeout and callback will execute after 1 second. So when the call back gets registered browser will start the timer. In mean time JS will be keep executing the normal code synchronously. When the timer expires that callback function gets placed in the CALLBACK QUEUE. EVENT LOOP will place the call back function in CALLSTACK when call stack is empty. 
+
+Event Loop : It is a mechanism which is responsible for async JS. Its job is to place the call back functions from CALLBACK QUEUE or MICROTASK QUEUE to CALLSTACK. 
+
+MicroTask Queue : It also has the callback functions of promises. It has more priority than the callback queue . 
