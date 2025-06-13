@@ -13,8 +13,8 @@ console.table([Name , surName , middleName]) // Used to output multiple values i
 // Var VS Let 
 
 /* 
-Scope of Var is global. Which might cause some problems.
-So its advised to not to use var and instead use let. 
+Scope of Var is functional.
+its advised to not to use var and instead use let. 
 */
 
 /* 
