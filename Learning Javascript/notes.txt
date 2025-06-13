@@ -29,3 +29,18 @@ How JS execute Asynchronous Code ?
 Event Loop : It is a mechanism which is responsible for async JS. Its job is to place the call back functions from CALLBACK QUEUE or MICROTASK QUEUE to CALLSTACK. 
 
 MicroTask Queue : It also has the callback functions of promises. It has more priority than the callback queue . 
+
+Callback Function : A callback function in JavaScript is a function that is passed as an argument to another function, and is executed after the completion of some operation. The callback function is not executed immediately. Instead, it is "called back" by the higher-order function at a later time, typically after a specific task or event has occurred.
+
+CallBack function uses : Callback function is very usefull for async javascript. Whenever we need to do somework async manner then we need to bundle those statement into the function and need to send that function as a callback.  Used In (event listners , async operation like reading data from servers). 
+
+Issues with callback : 1. Callback hell  2. Inversion of control. 
+
+1. Callback Hell : When multiple async operations needs to be executed in some order then it will result in nesting of callbacks. This grows the code horizontal manner which is diff to read and manage. This is callback hell.
+2. Inversion of control : In callback we are sending complete function to other function . Now its job of that other function to call that function. So this way programmer loses the control of code. He needs to believe that his function will be called by function. 
+
+Promises : Promises are the objects representing eventual completion of async operation. It has 2 part ( data -> returned by the async func , state->state of async funct i.e pending , rejected , fullfilled. ) 
+
+promises solves the issue of callback hell and inversion of control. 
+Insted of nested callback sequense .then() functions will be there which resolves the issue of call back hell. 
+Programmers also has the control over his function and he is damn sure that his function will be executed when promise is resolved.
