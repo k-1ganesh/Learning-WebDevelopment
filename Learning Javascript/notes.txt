@@ -44,3 +44,8 @@ Promises : Promises are the objects representing eventual completion of async op
 promises solves the issue of callback hell and inversion of control. 
 Insted of nested callback sequense .then() functions will be there which resolves the issue of call back hell. 
 Programmers also has the control over his function and he is damn sure that his function will be executed when promise is resolved.
+
+async-await : async-await is used to handle the promises. await keyword can used only inside the async function. async is a keyword used to add before function. 
+async functions always return promise. 
+
+How does async-await works :  We need to await to the function returning the promise. After that async function will no longer be in call stack. It will come back in call stack when the promise gets resolved. 
